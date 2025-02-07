@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box model 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: auto;
+        width: auto;
+        background-color: blue;
+        color: aliceblue;
+        border: 1px;
+        margin: 1px;
+      }
+      .content {
+        height: 90vh;
+        width: auto;
+        border: 1px;
+        margin: 1px;
+        background-color: rgb(70, 70, 141);
+        color: rgb(19, 235, 55);
+        box-sizing: content-box;
+      }
+
+      footer {
+        height: auto;
+        border: 1px;
+        margin: 1px;
+        width: auto;
+        background-color: #f61717;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <div class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto
+      dignissimos sunt. Dolorum beatae et rem soluta quas voluptate excepturi
+      maxime aspernatur minima ducimus, cupiditate unde perspiciatis sapiente
+      sit dicta?
+    </div>
+    <footer style="text-align: center">&copy;Copyright Box Model 1</footer>
+  </body>
+</html>
